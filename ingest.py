@@ -7,6 +7,11 @@ from langchain_community.vectorstores import FAISS
 from dotenv import load_dotenv
 
 load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
+if not openai_api_key:
+    raise ValueError("❌ OPENAI_API_KEY not found. Set it in your .env file or Streamlit Cloud secrets.")
+
 
 def load_documents(folder_path):
     docs = []
@@ -19,7 +24,7 @@ def load_documents(folder_path):
 def split_and_embed(docs):
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
     chunks = splitter.split_documents(docs)
-    embeddings = OpenAIEmbeddings()
+    embeddings = OpenAIEmbeddings(api_key=openai_api_key)
     vectorstore = FAISS.from_documents(chunks, embeddings)
     vectorstore.save_local('gunda_vector_store')
 

@@ -7,13 +7,18 @@ from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 import streamlit as st
 load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
+# Ensure key is set
+if not openai_api_key:
+    raise ValueError("❌ OPENAI_API_KEY not set in environment. Please add it to your .env file or Streamlit Cloud Secrets.")
 
 def getchain():
-        db=FAISS.load_local('gunda_vector_store', OpenAIEmbeddings(),allow_dangerous_deserialization=True
+        embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
+        db=FAISS.load_local('gunda_vector_store', embeddings,allow_dangerous_deserialization=True
         )
         retriever = db.as_retriever(search_kwargs={'k':3},)
         qa_chain = RetrievalQA.from_chain_type(
-        llm=ChatOpenAI(model_name="gpt-4"),chain_type="stuff",retriever=retriever)
+        llm=ChatOpenAI(model_name="gpt-4", api_key=openai_api_key),chain_type="stuff",retriever=retriever)
         return qa_chain
 
 
