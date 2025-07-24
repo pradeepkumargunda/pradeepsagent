@@ -56,14 +56,10 @@ def update_vector_store(docs,store_path='gunda_vector_store'):
 
 if __name__ == "__main__":
     documents = load_documents('new_data')
-    urls=["https://www.goodreads.com/review/list/45502289-pradeep-gunda?shelf=read"]
+    urls=["https://www.linkedin.com/in/pradeepkgunda/"]
     web_loader = WebBaseLoader(urls)
     web_docs = web_loader.load()
-    prompt=PromptTemplate(template='clean up this data and remove all the markup {text}',
-                          input_variables=['text'])
-    model = ChatOpenAI();
-    chain = prompt|model
-    result = chain.invoke({'text':web_docs[0].page_content})
-    web_docs[0].page_content = result.content
+
     documents.extend(web_docs)
+    print(documents)
     update_vector_store(documents)
