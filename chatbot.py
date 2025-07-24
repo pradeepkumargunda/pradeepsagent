@@ -59,7 +59,7 @@ def getchain():
     qa_chain = RetrievalQA.from_chain_type(
         llm=ChatOpenAI(model_name="gpt-4", api_key=openai_api_key),
         chain_type="stuff",
-        retriever=retriever`
+        retriever=retriever
     )
     return qa_chain
 

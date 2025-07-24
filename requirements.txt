@@ -12,3 +12,4 @@ docx>=0.1.2
 langchain_openai >= 0.0.2
 
 faiss-cpu>=1.6.0
+streamlit>=0.11.0
