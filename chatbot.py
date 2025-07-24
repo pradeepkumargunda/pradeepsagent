@@ -75,8 +75,8 @@ def main():
         with st.spinner("🧠 Thinking..."):
             response = chain.invoke(query)
             result = response.get("result", "No response")
-
-            st.markdown(f"<div class='response-box'>{result}</div>", unsafe_allow_html=True)
+            st.write(result)
+            #st.markdown(f"<div class='response-box'>{result}</div>", unsafe_allow_html=True)
 
 
 # Run app
