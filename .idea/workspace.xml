@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2845ed8-e5d4-45aa-9ee3-31a85507ce86" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/manualcheckvector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new_data/Pradeep Gunda AWS GenAI Certified Pega CLSA.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gunda_vector_store/index.faiss" beforeDir="false" afterPath="$PROJECT_DIR$/gunda_vector_store/index.faiss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gunda_vector_store/index.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/gunda_vector_store/index.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_data/canada visa instructions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Pradeep Gunda AWS GenAI Certified Pega CLSA.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_data/pradeep.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/update_vector_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/update_vector_store.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,17 +36,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.chatbot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ingest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.update_vector_store.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.chatbot.executor": "Run",
+    "Python.ingest.executor": "Run",
+    "Python.manualcheckvector.executor": "Run",
+    "Python.update_vector_store.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/pradeepgunda/PycharmProjects/PradeepsAgent"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/new_data" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

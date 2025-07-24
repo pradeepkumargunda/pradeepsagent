@@ -54,7 +54,7 @@ st.markdown("""
 # Chain creation function
 def getchain():
     embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
-    db = FAISS.load_local('gunda_vector_store', embeddings, allow_dangerous_deserialization=True)
+    db = FAISS.load_local('gunda_vector_store', embeddings=embeddings, allow_dangerous_deserialization=True)
     retriever = db.as_retriever(search_kwargs={'k': 3})
     qa_chain = RetrievalQA.from_chain_type(
         llm=ChatOpenAI(model_name="gpt-4", api_key=openai_api_key),
