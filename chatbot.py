@@ -107,7 +107,7 @@ def main():
         st.session_state.chain = getchain()
     st.markdown("<div class='main-title'>GundaGPT</div>", unsafe_allow_html=True)
 
-    st.markdown("<div class='subheader'>Powered by GPT-4 + FAISS</div>", unsafe_allow_html=True)
+    st.markdown("<div class='subheader'>Powered by GPT-4, FAISS, and ✨vibes✨</div>", unsafe_allow_html=True)
 
     st.markdown("<div class='subheader'> Want to know more about Pradeep’s work, skills, or go-to films and reads? Fire away!</div>", unsafe_allow_html=True)
 

@@ -7,7 +7,10 @@
     <list default="true" id="a2845ed8-e5d4-45aa-9ee3-31a85507ce86" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedback.db" beforeDir="false" afterPath="$PROJECT_DIR$/feedback.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_data/movies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/new_data/movies.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update_vector_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/update_vector_store.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +41,7 @@
     "Python.chatbot.executor": "Run",
     "Python.ingest.executor": "Run",
     "Python.manualcheckvector.executor": "Run",
+    "Python.sample_play.executor": "Run",
     "Python.update_vector_store.executor": "Run",
     "Python.view_feedback.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",

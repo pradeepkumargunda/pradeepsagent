@@ -15,3 +15,8 @@ faiss-cpu>=1.6.0
 streamlit>=0.11.0
 
 duckduckgo-search>=1.0
+
+langchain-google-community[gmail]>=1.0.2
+google-auth-oauthlib>=0.1.0
+google-auth>=0.1.0
+google-api-python-client>=1.1

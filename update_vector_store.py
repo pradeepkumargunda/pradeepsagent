@@ -77,8 +77,8 @@ if __name__ == "__main__":
     if (len(documents) != 0):
         update_vector_store(documents)
 
-    urls=["https://www.linkedin.com/in/pradeepkgunda/"]
-    web_loader = WebBaseLoader(urls)
-    web_docs = web_loader.load()
+    #urls=["https://www.linkedin.com/in/pradeepkgunda/"]
+    #web_loader = WebBaseLoader(urls)
+    #web_docs = web_loader.load()
     #update_vector_store(documents)
 
