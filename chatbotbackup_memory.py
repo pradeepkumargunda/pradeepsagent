@@ -56,16 +56,38 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+template = """
+You are a helpful assistant that answers questions based on retrieved documents.
+
+Use the conversation history below to answer the question.
+
+If the user asks about previous questions they've asked, list all the human questions from the conversation history.
+
+Context:
+{context}
+
+Conversation History:
+{chat_history}
+
+Question: {question}
+
+Answer:
+"""
+prompt = PromptTemplate(template=template,
+                        input_variables=['chat_history', 'question'])
+
 # Chain creation function
 def getchain():
     embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
     db = FAISS.load_local('gunda_vector_store', embeddings=embeddings, allow_dangerous_deserialization=True)
     retriever = db.as_retriever(search_kwargs={'k': 3})
+    memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-    qa_chain = RetrievalQA.from_llm(
+    qa_chain = ConversationalRetrievalChain.from_llm(
         llm=ChatOpenAI(model_name="gpt-4", openai_api_key=openai_api_key),
-        retriever=retriever
-    )
+        retriever=retriever,
+        memory=memory,
+        combine_docs_chain_kwargs={"prompt": prompt})
     return qa_chain
 
 # Main app
@@ -79,9 +101,21 @@ def main():
 
     if query:
         with st.spinner("🧠 Thinking..."):
-            response = st.session_state.chain.invoke(query)
-            result = response.get("result", "No response")
+            response = st.session_state.chain.invoke({"question": query})
+            result = response.get("answer", "No response")
             st.write(result)
+            #st.write(st.session_state.chain.memory.chat_memory.messages)
+            #nq_prompt=PromptTemplate(template="""Based on the below chat history, suggest a good next question
+            #chat_history:{chat_history}""",input_variables=['chat_history'])
+            model = ChatOpenAI(model_name="gpt-4", openai_api_key=openai_api_key)
+            #nq_chain = nq_prompt | model | parser
+            #nq=nq_chain.invoke({"chat_history": st.session_state.chain.memory.chat_memory.messages})
+            #st.write(nq)
+
+
+            #st.markdown(f"<div class='response-box'>{result}</div>", unsafe_allow_html=True)
+
+
 # Run app
 if __name__ == '__main__':
     main()
