@@ -42,12 +42,12 @@ def update_vector_store(docs,store_path='gunda_vector_store'):
     vector_store = FAISS.load_local(store_path,OpenAIEmbeddings(api_key=openai_api_key), allow_dangerous_deserialization=True
     )
 
-    splitter = RecursiveCharacterTextSplitter(chunk_size=100,chunk_overlap=20)
+    splitter = RecursiveCharacterTextSplitter(chunk_size=500,chunk_overlap=100)
     chunks = splitter.split_documents(docs)
     # Embed and add to store
     print(chunks)
-    #vector_store.add_documents(chunks)
-    #vector_store.save_local('gunda_vector_store')
+    vector_store.add_documents(chunks)
+    vector_store.save_local('gunda_vector_store')
 
 
 
