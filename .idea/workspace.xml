@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2845ed8-e5d4-45aa-9ee3-31a85507ce86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data_backup/Base.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view_feedback.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools-6.1.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools-6.1.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools-6.1.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools-6.1.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools-6.1.0.dist-info/licenses/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools-6.1.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools/_cached.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools/_cachedmethod.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools/func.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/cachetools/func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core-0.3.71.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core-0.3.71.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core-0.3.71.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core-0.3.71.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core-0.3.71.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core/utils/json_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core/utils/json_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.12/site-packages/langchain_core/version.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Pradeep Gunda AWS GenAI Certified Pega CLSA.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gunda_vector_store/index.faiss" beforeDir="false" afterPath="$PROJECT_DIR$/gunda_vector_store/index.faiss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gunda_vector_store/index.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/gunda_vector_store/index.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_data/resume_text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_backup/resume_text.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +57,7 @@
     "Python.ingest.executor": "Run",
     "Python.manualcheckvector.executor": "Run",
     "Python.update_vector_store.executor": "Run",
+    "Python.view_feedback.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",

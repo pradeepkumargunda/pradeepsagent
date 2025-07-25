@@ -8,6 +8,9 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 import streamlit as st
+import sqlite3
+from datetime import datetime
+
 
 # Load environment variables
 load_dotenv()
@@ -57,6 +60,29 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 # Chain creation function
+def init_feedback_db():
+    conn = sqlite3.connect("feedback.db")
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS feedback (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            timestamp TEXT,
+            message TEXT
+        )
+    """)
+    conn.commit()
+    conn.close()
+
+def save_feedback(message: str):
+    conn = sqlite3.connect("feedback.db")
+    cursor = conn.cursor()
+    cursor.execute("INSERT INTO feedback (timestamp, message) VALUES (?, ?)",
+                   (datetime.utcnow().isoformat(), message))
+    conn.commit()
+    conn.close()
+
+
+
 def getchain():
     embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
     db = FAISS.load_local('gunda_vector_store', embeddings=embeddings, allow_dangerous_deserialization=True)
@@ -70,6 +96,7 @@ def getchain():
 
 # Main app
 def main():
+    init_feedback_db()
     if "chain" not in st.session_state:
         st.session_state.chain = getchain()
     st.markdown("<div class='main-title'>GundaGPT</div>", unsafe_allow_html=True)
@@ -83,6 +110,17 @@ def main():
             response = st.session_state.chain.invoke(query)
             result = response.get("result", "No response")
             st.write(result)
+
+    # Bottom-left feedback button with popup
+    with st.expander("💬 Feedback / Actions"):
+        feedback_text = st.text_area("Your feedback", key="feedback_text", height=100, label_visibility="collapsed")
+        if st.button("Send Feedback", key="send_feedback_btn"):
+            if feedback_text.strip():
+                save_feedback(feedback_text)
+                st.toast("✅ Feedback submitted successfully!", icon="📬")
+            else:
+                st.toast("⚠️ Please enter some feedback before submitting.", icon="⚠️")
+
 # Run app
 if __name__ == '__main__':
     main()
