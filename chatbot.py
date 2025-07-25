@@ -10,6 +10,9 @@ from langchain.chains import RetrievalQA
 import streamlit as st
 import sqlite3
 from datetime import datetime
+from langchain_community.tools import DuckDuckGoSearchRun
+import requests
+
 
 
 # Load environment variables
@@ -97,10 +100,15 @@ def getchain():
 # Main app
 def main():
     init_feedback_db()
+    res = requests.get("https://zenquotes.io/api/random")
+    dispay_quote=f"*{res.json()[0]["q"]} - {res.json()[0]["a"]}*"
+
     if "chain" not in st.session_state:
         st.session_state.chain = getchain()
     st.markdown("<div class='main-title'>GundaGPT</div>", unsafe_allow_html=True)
+
     st.markdown("<div class='subheader'>Powered by GPT-4 + FAISS</div>", unsafe_allow_html=True)
+
     st.markdown("<div class='subheader'> Want to know more about Pradeep’s work, skills, or go-to films and reads? Fire away!</div>", unsafe_allow_html=True)
 
     query = st.text_input("🔍 Type your question here:")
@@ -120,6 +128,7 @@ def main():
                 st.toast("✅ Feedback submitted successfully!", icon="📬")
             else:
                 st.toast("⚠️ Please enter some feedback before submitting.", icon="⚠️")
+    st.write(dispay_quote)
 
 # Run app
 if __name__ == '__main__':
