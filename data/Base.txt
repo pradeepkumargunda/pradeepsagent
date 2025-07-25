@@ -1,0 +1,249 @@
+Below Is the information for Pradeep Gunda
+
+### Personal Information
+
+* **Name:** Pradeep Kumar Gunda
+* **Phone:** +1-973-723-2633
+* **Email:** [pradeepkumar.gunda@gmail.com](mailto:pradeepkumar.gunda@gmail.com)
+* **LinkedIn:** [linkedin.com/in/pradeep-gunda-b90a9519](https://linkedin.com/in/pradeep-gunda-b90a9519)
+* **Location:** Princeton, NJ, USA
+
+---
+
+### Summary
+
+Senior Pega Lead Architect with 17+ years of experience delivering enterprise-grade workflow and case management solutions across industries including judiciary, banking, healthcare, and automotive. Specialized in scalable architecture design, modernization of legacy systems, and development of intelligent automation using Pega, microservices, and GenAI. Deep understanding of LLM-based generative AI systems.
+
+---
+
+### Certifications
+
+* PEGA CLSA (Certified Lead System Architect)
+* PEGA CIS, CDH, CPM
+* Gen AI with LLMs
+* AWS Solution Architect – Associate
+* Azure Cloud Fundamentals
+* SCJP
+
+
+### 🎬 Favourite Movies and Shows
+
+* *The Namesake*
+* *The Lord of the Rings*
+* *One Flew Over the Cuckoo's Nest*
+* *The Sopranos*
+* *Mad Men*
+* *Game of Thrones*
+* *Breaking Bad*
+* *Californication*
+* *Vijetha*
+
+---
+
+### 📚 Favourite Books
+
+* *The Help*
+* *The Catcher in the Rye*
+* *The Power of Now*
+* *Osho Series*
+* *Veyipadagalu*
+* *Stoner*
+* *The 7 Habits of Highly Effective People*
+* *The Namesake*
+* *Immortals of Meluha*
+
+---
+
+
+### Top Technical Skills
+
+* **Pega & Related:** Pega, Pega AI, Pega Cloud, CDH, BIX, Robotics, CPM, Constellation, PDC
+* **AI GENAI ML:** python, Langchain, embeddings, RAG, Vector Stores
+* **Databases:** SQL, PostgreSQL, DB2, Oracle, Elasticsearch, vector databse
+* **Languages:** Java, C, C++, python
+* **DevOps/Tools:** DevOps, CI/CD, Kafka, Postman, JMS, Microsoft Visio, JSON, REST, Streamlit, GitHub
+* **Other:** Camunda, HTML, JavaScript, CRM, Agile, MDM, Data Science, GenAI
+
+---
+
+### Key Responsibilities (Technical Architecture)
+
+* Designed scalable Pega class structures and extensible data models
+* Defined case lifecycle strategies and security frameworks
+* Created modular UIs and real-time integrations with legacy systems
+* Built high-throughput background processes for automation
+* Developed CI/CD pipelines and third-party integrations via REST/SOAP
+* Established analytics and monitoring via custom/OOTB reporting and PDC
+
+---
+
+### Professional Experience
+
+#### **Principal Pega Lead Architect**
+
+**New Jersey Courts via NOVI IT** – Princeton, NJ
+**Periods:** June 2016 – April 2020, June 2024 – Present
+
+* Designed judiciary-wide applications like Judiciary Warrants System (JWS), Expungements Workflow, Criminal Case Initiation
+* Built the Public Safety Assessment system as part of Criminal Justice Reform
+* Developed enterprise components for unified data access and robotic automation of green-screen interfaces
+
+#### **New Loan Audit**
+
+**U.S. Bank via NOVI IT** – Princeton, NJ
+**Period:** Jan 2024 – June 2024
+
+* Built OCR-based loan auditing workflows with real-time comparison to MSP mainframe systems
+
+#### **Subordination Loans & BARC**
+
+**Navy Federal Credit Union via NOVI IT** – Princeton, NJ
+**Period:** May 2023 – Jan 2024
+
+* Automated legacy Lotus Notes systems for returned cards and loan subordination
+* Integrated APIs and customer notification mechanisms
+
+#### **Consumer Warranty Automation Tool**
+
+**Ford Motors via NOVI IT** – Princeton, NJ
+**Period:** Apr 2021 – May 2023
+
+* Streamlined warranty legal processes and external collaboration with law firms
+
+#### **Pega One Rating Platform**
+
+**Moody’s via NOVI IT** – Princeton, NJ
+**Period:** May 2020 – Apr 2021
+
+* Enabled credit rating workflows for Investor Services through Pega
+
+#### **Client Implementation Process**
+
+**CVS Caremark via NOVI IT** – Chicago, IL
+**Period:** Dec 2014 – Jun 2016
+
+* Automated client onboarding and ANOC workflows for Medicare Part D compliance
+
+#### **World Service Portal**
+
+**American Express via TCS** – Miami, FL
+**Period:** Apr 2013 – Dec 2014
+
+* Led global POA development; integrated telephony via PegaCALL
+
+#### **Mortgage Online Account Opening**
+
+**Truist via Cognizant** – Raleigh, NC
+**Period:** Jul 2012 – Apr 2013
+
+* Replaced UniFi system; built underwriting automation in Pega
+
+#### **Integrated Case Management Systems**
+
+**State of Indiana via Cognizant** – Indianapolis, IN
+**Period:** Jun 2012 – Jul 2012
+
+* Developed unified system POC to modernize statewide case management
+
+#### **Health Action Plan**
+
+**Express Scripts Inc via Cognizant** – Franklin Lakes, NJ
+**Period:** Nov 2011 – Jun 2012
+
+* Built care-gap counseling tool for CSRs to improve member outcomes
+
+#### **Legacy Claims Modernization**
+
+**Highmark via Accenture** – Hyderabad, India
+**Period:** Oct 2010 – Nov 2011
+
+* Replaced mainframe UIs with Pega-based interfaces for suspended claims
+
+#### **Commercial Loan Services**
+
+**JP Morgan Chase via Virtusa** – Hyderabad, India
+**Period:** Jul 2007 – Oct 2010
+
+* Automated end-to-end commercial loan processing workflows
+
+---
+
+### Education
+
+* **MCA (Master of Computer Applications)** – University College of Engineering, Osmania University, 2007 – Distinction
+* **BCA (Bachelor of Computer Applications)** – HRD Degree & PG College, Osmania University, 2004 – Distinction
+
+---
+
+### Languages
+
+* **English:** Proficient
+* **Hindi:** Native
+* **Telugu:** Native
+
+---
+
+### Volunteering
+
+**Trustee, Mitr – The Reliable Shoulder (2007–Present)**
+
+* Uplifting rural schools, supporting students and senior homes financially, and engaging in social impact initiatives
+
+---
+
+### Industry Experience
+
+* BFSI (Banking and Financial Services)
+* Healthcare
+* Government Judiciary
+* Credit Rating
+* Automotive
+
+---
+
+### Strengths
+
+* Proactive Go-Getter
+* Resilient and Persistent
+* Fast Learner
+* Big Picture Thinker
+
+---
+
+### Recommendations
+
+Here is the updated, structured, and semantically rich version of your profile including the **recommendations**, formatted for embedding into a vector database or RAG application. These are placed under a new section titled **Recommendations**, written with clean segmentation and natural language to maximize embedding relevance.
+
+---
+
+### Recommendations
+
+#### **Recommendation by Venkkata Suman Palukuru**
+
+"I’ve had the privilege of working alongside Pradeep Gunda since the beginning of our careers, and he has consistently stood out as a strong technical leader with exceptional communication skills. His deep expertise in Pega, combined with his ability to quickly grasp and articulate concepts across a wide range of technologies, makes him a rare and valuable asset.
+
+What sets Pradeep apart is his ability to break down complex ideas and communicate them clearly to both technical and non-technical audiences. His collaborative style, openness to feedback, and inclusive communication foster healthy discussions and effective decision-making—especially in architecture and design forums where clarity and consensus are critical.
+
+Pradeep leads by example. His curiosity, continuous learning mindset, and willingness to share knowledge have not only inspired me but also elevated the teams he’s part of. He naturally steps into a mentoring role, guiding others with patience and clarity.
+
+For any organization seeking a technically strong, communicative, and growth-minded leader, I highly recommend Pradeep Gunda."
+
+#### **Recommendation by Lei Zhong**
+
+"I’ve really enjoyed working with Pradeep at the New Jersey Judiciary ITO. He’s one of the most reliable and technically strong people I’ve worked with. He has great Pega skills and a solid grasp of system architecture, app development, and integration. You can always count on him to understand the big picture and figure out practical solutions.
+
+On top of that, Pradeep is super easy to work with. He’s a great communicator, speaks fluent English, and is always open to collaboration. He’s also a strong leader as a Lead System Architect. I’ve seen him successfully lead multiple projects at the same time."
+
+#### **Recommendation by Divesh Sharma**
+
+"I worked along with Pradeep on a Pega development project implemented for a large global bank. During this period, I realized he is a quick learner and ready to accept challenges. He has a very strong hold on PRPC’s functional and technical domains. He is a nice human being—honest, sincere, and caring. Hardworking, dedicated, and manages time very well. He is a good mentor, an excellent team player, and one of the most valuable resources in Pega."
+
+#### **Recommendation by Vasu Belide**
+
+"Pradeep is an intelligent and honest professional. He is very sharp and understands things quickly. I have studied with him during our university days, and he was always one of the toppers. He remained focused and committed to his studies. We had a lot of innovative thoughts and discussions related to the programs we developed and the subjects we studied. I am sure he is very knowledgeable and successful in his profession."
+
+---
+
+This section is now structured to be highly indexable, well-separated for retrieval granularity, and aligned with best practices for RAG systems.
+
+Would you like this converted into a JSON document for ingestion into your vector store (e.g. Pinecone, Weaviate, FAISS), or would you like me to split it into chunks for embedding along with metadata like `source`, `type`, `name`, etc.?

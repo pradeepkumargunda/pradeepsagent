@@ -60,7 +60,7 @@ st.markdown("""
 def getchain():
     embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
     db = FAISS.load_local('gunda_vector_store', embeddings=embeddings, allow_dangerous_deserialization=True)
-    retriever = db.as_retriever(search_kwargs={'k': 3})
+    retriever = db.as_retriever(search_type="mmr",search_kwargs={'k': 5})
 
     qa_chain = RetrievalQA.from_llm(
         llm=ChatOpenAI(model_name="gpt-4", openai_api_key=openai_api_key),
@@ -72,8 +72,9 @@ def getchain():
 def main():
     if "chain" not in st.session_state:
         st.session_state.chain = getchain()
-    st.markdown("<div class='main-title'>📄 Ask Pradeep's Resume</div>", unsafe_allow_html=True)
-    st.markdown("<div class='subheader'>Powered by GPT-4 + FAISS | Ask anything about Pradeep's experience, skills, or projects</div>", unsafe_allow_html=True)
+    st.markdown("<div class='main-title'>GundaGPT</div>", unsafe_allow_html=True)
+    st.markdown("<div class='subheader'>Powered by GPT-4 + FAISS</div>", unsafe_allow_html=True)
+    st.markdown("<div class='subheader'> Want to know more about Pradeep’s work, skills, or go-to films and reads? Fire away!</div>", unsafe_allow_html=True)
 
     query = st.text_input("🔍 Type your question here:")
 
