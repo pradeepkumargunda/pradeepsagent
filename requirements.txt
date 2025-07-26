@@ -20,3 +20,5 @@ langchain-google-community[gmail]>=1.0.2
 google-auth-oauthlib>=0.1.0
 google-auth>=0.1.0
 google-api-python-client>=1.1
+
+supabase>=0.1.1

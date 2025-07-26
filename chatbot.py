@@ -12,12 +12,19 @@ import sqlite3
 from datetime import datetime
 from langchain_community.tools import DuckDuckGoSearchRun
 import requests
+from supabase import create_client, Client
 
 
 
 # Load environment variables
 load_dotenv()
 parser = StrOutputParser()
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+print(SUPABASE_URL)
+print(SUPABASE_KEY)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 if not openai_api_key:
@@ -77,13 +84,11 @@ def init_feedback_db():
     conn.close()
 
 def save_feedback(message: str):
-    conn = sqlite3.connect("feedback.db")
-    cursor = conn.cursor()
-    cursor.execute("INSERT INTO feedback (timestamp, message) VALUES (?, ?)",
-                   (datetime.utcnow().isoformat(), message))
-    conn.commit()
-    conn.close()
-
+    try:
+        response = supabase.table("feedback").insert({"message": message}).execute()
+        print("✅ Feedback saved:", response)
+    except Exception as e:
+        print("❌ Failed to save feedback:", e)
 
 
 def getchain():
