@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a2845ed8-e5d4-45aa-9ee3-31a85507ce86" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedback.db" beforeDir="false" afterPath="$PROJECT_DIR$/feedback.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gunda_vector_store/index.faiss" beforeDir="false" afterPath="$PROJECT_DIR$/gunda_vector_store/index.faiss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gunda_vector_store/index.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/gunda_vector_store/index.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new_data/movies.txt" beforeDir="false" afterPath="$PROJECT_DIR$/new_data/movies.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/update_vector_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/update_vector_store.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
