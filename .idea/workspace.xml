@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a2845ed8-e5d4-45aa-9ee3-31a85507ce86" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_backup/Base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_backup/Base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingest.py" beforeDir="false" afterPath="$PROJECT_DIR$/ingest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_play.py" beforeDir="false" afterPath="$PROJECT_DIR$/sample_play.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,21 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.chatbot.executor": "Run",
-    "Python.ingest.executor": "Run",
-    "Python.manualcheckvector.executor": "Run",
-    "Python.sample_play.executor": "Run",
-    "Python.update_vector_store.executor": "Run",
-    "Python.view_feedback.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/pradeepgunda/PycharmProjects/PradeepsAgent/data_backup"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.chatbot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ingest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.manualcheckvector.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sample_play.executor&quot;: &quot;Run&quot;,
+    &quot;Python.update_vector_store.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view_feedback.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pradeepgunda/PycharmProjects/PradeepsAgent/data_backup&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data_backup" />

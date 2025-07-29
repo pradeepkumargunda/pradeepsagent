@@ -25,43 +25,15 @@ Senior Pega Lead Architect with 17+ years of experience delivering enterprise-gr
 * Azure Cloud Fundamentals
 * SCJP
 
-
-### 🎬 Favourite Movies and Shows
-
-* *The Namesake*
-* *The Lord of the Rings*
-* *One Flew Over the Cuckoo's Nest*
-* *The Sopranos*
-* *Mad Men*
-* *Game of Thrones*
-* *Breaking Bad*
-* *Californication*
-* *Vijetha*
-
 ---
 
-### 📚 Favourite Books
-
-* *The Help*
-* *The Catcher in the Rye*
-* *The Power of Now*
-* *Osho Series*
-* *Veyipadagalu*
-* *Stoner*
-* *The 7 Habits of Highly Effective People*
-* *The Namesake*
-* *Immortals of Meluha*
-
----
-
-
-### Top Technical Skills
+### Top Technical Technical Skills
 
 * **Pega & Related:** Pega, Pega AI, Pega Cloud, CDH, BIX, Robotics, CPM, Constellation, PDC
-* **AI GENAI ML:** python, Langchain, embeddings, RAG, Vector Stores
-* **Databases:** SQL, PostgreSQL, DB2, Oracle, Elasticsearch, vector databse
-* **Languages:** Java, C, C++, python
-* **DevOps/Tools:** DevOps, CI/CD, Kafka, Postman, JMS, Microsoft Visio, JSON, REST, Streamlit, GitHub
+* **Gen AI ML:** GenAI, Python, Langchain, Langgraph, RAG, Vector Databases
+* **Databases:** SQL, PostgreSQL, DB2, Oracle, Elasticsearch
+* **Languages:** Java, C, C++
+* **DevOps/Tools:** DevOps, CI/CD, Kafka, Postman, JMS, Microsoft Visio, JSON, REST
 * **Other:** Camunda, HTML, JavaScript, CRM, Agile, MDM, Data Science, GenAI
 
 ---
@@ -77,16 +49,134 @@ Senior Pega Lead Architect with 17+ years of experience delivering enterprise-gr
 
 ---
 
-### Professional Experience
+### Professional Experience, Projects worked on
 
 #### **Principal Pega Lead Architect**
 
-**New Jersey Courts via NOVI IT** – Princeton, NJ
-**Periods:** June 2016 – April 2020, June 2024 – Present
+Project: Expungements
+Organization: NJ State Judiciary
+Period: Aug 2019 – Apr 2020
+Location: Trenton, NJ, USA
+Environment: Pega 7/8, BIX, DevOps
 
-* Designed judiciary-wide applications like Judiciary Warrants System (JWS), Expungements Workflow, Criminal Case Initiation
-* Built the Public Safety Assessment system as part of Criminal Justice Reform
-* Developed enterprise components for unified data access and robotic automation of green-screen interfaces
+Project Description:
+A judicial workflow application enabling digital processing of expungement petitions, involving multiple case actors—public defenders, prosecutors, court clerks, and judges. The workflow was designed to ensure compliance with statutory rules and support multiple expungement types.
+
+Architectural Responsibilities:
+
+Architected reusable, dynamic case hierarchies for various expungement scenarios with a focus on role-based access and audit compliance.
+
+Designed data models aligned with judiciary legal entities and created modular UI components for process reusability.
+
+Developed BIX-based audit reporting structures to support regulatory oversight.
+
+Established scalable PDF generation frameworks for legally binding documents.
+
+Created extensible architecture supporting integration with downstream court systems.
+
+Project: Criminal Case Initiation
+Organization: NJ State Judiciary
+Period: Mar 2019 – Apr 2020
+Location: Trenton, NJ, USA
+Environment: Pega 7/8, BIX, DevOps
+
+Project Description:
+This system automates the criminal case initiation process by processing indictable charges passed from the municipal systems. Prosecutors use this system to evaluate and triage complaints, update judicial records, and take appropriate legal action.
+
+Architectural Responsibilities:
+
+Designed and implemented synchronization mechanisms to ingest and reconcile legacy system data using agents and connect rules.
+
+Built secure case types and flow orchestration for different prosecutorial outcomes (remand, downgrade, dismissal).
+
+Architected REST-based integration touchpoints with legacy and external judiciary platforms.
+
+Implemented reusable authentication, authorization, and audit layers consistent with judiciary standards.
+
+Managed data orchestration using stored procedures and automated processes for near real-time responsiveness.
+
+Project: Public Safety Assessment (PSA)
+Organization: NJ State Judiciary
+Period: Jun 2016 – Apr 2020
+Location: Trenton, NJ, USA
+Environment: Pega 7, BIX
+
+Project Description:
+PSA is a data-driven tool used as part of New Jersey’s Criminal Justice Reform. It evaluates a defendant’s court history using risk algorithms to determine pretrial release or detention decisions, replacing the former cash bail system.
+
+Architectural Responsibilities:
+
+Designed decision logic architecture for the PSA algorithm using Pega Decision Tables and declarative rules.
+
+Implemented a federated data retrieval approach using keyed data pages and search-optimized patterns to process high data volumes.
+
+Built secure service interfaces (SOAP) for real-time invocation by other judicial platforms.
+
+Enabled historical data exports using BIX for compliance and analytical reporting.
+
+Focused on optimization and high availability for mission-critical decisions under strict time constraints.
+
+Project: Party Court History (PCH) V1 & V2
+Organization: NJ State Judiciary
+Period: Apr 2017 – Apr 2020
+Location: Trenton, NJ, USA
+Environment: Pega 7
+
+Project Description:
+PCH aggregates a defendant’s historical data from multiple court systems (Criminal, Municipal, Family, and Probation) and presents it in a unified PDF or web service. Used by court staff and external systems for judicial decisions.
+
+Architectural Responsibilities:
+
+Defined a loosely coupled architecture using MDM for identity resolution and backend stored procedures for data aggregation.
+
+Architected logic to extract, group, and format court history data across decades while maintaining performance.
+
+Developed integration components for real-time service exposure and batch document generation.
+
+Built resilient document rendering components for multi-system consumption (PDF/Web Service).
+
+Introduced versioned architecture to support V1/V2 parallel runs.
+
+Project: Enterprise Data Component
+Organization: NJ State Judiciary
+Period: Aug 2019 – Apr 2020
+Location: Trenton, NJ, USA
+Environment: Pega 7/8, DevOps
+
+Project Description:
+An enterprise-wide Pega component designed to centralize data access logic from the System of Record (SOR) across ~60 Pega applications, replacing decentralized SP usage to improve maintainability, governance, and performance.
+
+Architectural Responsibilities:
+
+Designed and implemented a centralized service component to abstract and standardize data retrieval from SOR systems.
+
+Eliminated redundancy by consolidating legacy stored procedures into reusable connectors.
+
+Promoted architectural best practices across Pega teams as part of the internal CoE.
+
+Enabled CI/CD readiness by designing reusable DevOps pipelines for integration.
+
+Governed design reviews to ensure adherence to shared service standards.
+
+Project: Unified Inquiry – Party Court Search and Modify (PCSAM)
+Organization: NJ State Judiciary
+Period: Jun 2018 – Dec 2019
+Location: Trenton, NJ, USA
+Environment: Pega 7
+
+Project Description:
+A consolidated inquiry tool enabling judiciary staff to search, review, and modify defendant court history. The application integrates with MDM and multiple legacy systems and offers real-time PDF and data service generation.
+
+Architectural Responsibilities:
+
+Architected a search and retrieval framework leveraging MDM for key resolution and federated data access.
+
+Designed rules for dynamic case document formatting and real-time document generation.
+
+Implemented integration-friendly service layers to share structured data across systems.
+
+Built extensibility into UI rules and case routing logic for future use-case expansion.
+
 
 #### **New Loan Audit**
 
@@ -110,12 +200,53 @@ Senior Pega Lead Architect with 17+ years of experience delivering enterprise-gr
 
 * Streamlined warranty legal processes and external collaboration with law firms
 
-#### **Pega One Rating Platform**
+### Professional Experience, Projects worked on
 
-**Moody’s via NOVI IT** – Princeton, NJ
-**Period:** May 2020 – Apr 2021
+Project: Pega One Rating Platform
+Organization: Moody’s Investor Services
+Period: May 2020 – Present
+Location: New Jersey, USA
+Environment: Pega 7/8
 
-* Enabled credit rating workflows for Investor Services through Pega
+Project Description:
+Moody’s Pega One Rating Platform (ORP) supports end-to-end credit rating workflows. The platform facilitates structured, compliant, and auditable data entry, analysis, rating, and publishing activities across different departments. It’s designed to meet strict regulatory, performance, and audit requirements.
+
+Architectural Responsibilities:
+
+Led end-to-end enterprise application architecture design including class structure, case hierarchy, data model, security, and reusable UI components.
+
+Defined scalable story and epic breakdowns aligned with Pega design guardrails, enabling maintainable implementation by technical teams.
+
+Facilitated requirements alignment with Pega OOTB capabilities during DCO sessions to reduce unnecessary customization.
+
+Actively contributed to building architectural blueprints and hands-on implementation of critical features to accelerate delivery.
+
+Instituted architecture review processes for quality, performance, and maintainability oversight.
+
+Provided production monitoring strategies and performance tuning plans to ensure scalable and high-performing deployments.
+
+
+Project: Loan Forgiveness
+Organization: Oriental Bank
+Period: Apr 2020 – May 2020
+Location: New Jersey, USA
+Environment: Pega 7/8
+
+Project Description:
+A time-sensitive solution developed in response to the U.S. federal government’s PPP Loan Forgiveness initiative. The application enabled small business owners to submit forgiveness requests through a multi-channel digital workflow, emphasizing speed, compliance, and automation.
+
+Architectural Responsibilities:
+
+Designed a lean, compliance-ready architecture using Pega’s public access model and OOTB PDF generation.
+
+Modeled adaptive data structures for capturing evolving loan and forgiveness details.
+
+Ensured auditability, traceability, and secure data handling using scalable integration and storage patterns.
+
+Leveraged Pega’s UI templates and case types to rapidly configure and deploy the solution.
+
+Delivered the entire design within tight regulatory deadlines using minimal customization.
+
 
 #### **Client Implementation Process**
 
@@ -126,7 +257,9 @@ Senior Pega Lead Architect with 17+ years of experience delivering enterprise-gr
 
 #### **World Service Portal**
 
-**American Express via TCS** – Miami, FL
+**American Express via TCS** – Miami, FL ### Professional Experience, Projects worked on
+
+
 **Period:** Apr 2013 – Dec 2014
 
 * Led global POA development; integrated telephony via PegaCALL
@@ -210,13 +343,6 @@ Senior Pega Lead Architect with 17+ years of experience delivering enterprise-gr
 
 ---
 
-### Recommendations
-
-Here is the updated, structured, and semantically rich version of your profile including the **recommendations**, formatted for embedding into a vector database or RAG application. These are placed under a new section titled **Recommendations**, written with clean segmentation and natural language to maximize embedding relevance.
-
----
-
-### Recommendations
 
 #### **Recommendation by Venkkata Suman Palukuru**
 
@@ -244,6 +370,4 @@ On top of that, Pradeep is super easy to work with. He’s a great communicator,
 
 ---
 
-This section is now structured to be highly indexable, well-separated for retrieval granularity, and aligned with best practices for RAG systems.
-
-Would you like this converted into a JSON document for ingestion into your vector store (e.g. Pinecone, Weaviate, FAISS), or would you like me to split it into chunks for embedding along with metadata like `source`, `type`, `name`, etc.?
+T

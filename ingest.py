@@ -67,9 +67,6 @@ if __name__ == "__main__":
     if (len(documents) != 0):
         update_vector_store(documents)
 
-    documents = load_documents_txt('new_data')
-    if (len(documents) != 0):
-        update_vector_store(documents)
     documents = load_documents_txt('data')
     if (len(documents) != 0):
         update_vector_store(documents)
