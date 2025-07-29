@@ -116,14 +116,21 @@ def main():
 
     st.markdown("<div class='subheader'> Want to know more about Pradeep’s work, skills, or go-to films and reads? Fire away!</div>", unsafe_allow_html=True)
 
-    query = st.text_input("🔍 Type your question here:")
+    # Input box with session state for clearing
+    if "user_input" not in st.session_state:
+        st.session_state.user_input = ""
 
-    if query:
+    def clear_input():
+        st.session_state.user_input = ""
+
+    query = st.text_input("🔍 Type your question here:", value=st.session_state.user_input, key="user_input",
+                          on_change=clear_input)
+
+    if query.strip():
         with st.spinner("🧠 Thinking..."):
             response = st.session_state.chain.invoke(query)
             result = response.get("result", "No response")
             st.write(result)
-
     # Bottom-left feedback button with popup
     with st.expander("💬 Feedback / Actions"):
         feedback_text = st.text_area("Your feedback", key="feedback_text", height=100, label_visibility="collapsed")
