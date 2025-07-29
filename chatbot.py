@@ -116,17 +116,9 @@ def main():
 
     st.markdown("<div class='subheader'> Want to know more about Pradeep’s work, skills, or go-to films and reads? Fire away!</div>", unsafe_allow_html=True)
 
-    # Input box with session state for clearing
-    if "user_input" not in st.session_state:
-        st.session_state.user_input = ""
+    query = st.text_input("🔍 Type your question here:")
 
-    def clear_input():
-        st.session_state.user_input = ""
-
-    query = st.text_input("🔍 Type your question here:", value=st.session_state.user_input, key="user_input",
-                          on_change=clear_input)
-
-    if query.strip():
+    if query:
         with st.spinner("🧠 Thinking..."):
             response = st.session_state.chain.invoke(query)
             result = response.get("result", "No response")
